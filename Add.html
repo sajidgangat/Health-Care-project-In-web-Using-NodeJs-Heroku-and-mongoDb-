@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    
+    <title>Add Patient</title>
+    
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+   
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+   
+</head>
+<body>
+    
+    <!-- HEADER END-->
+    <header>
+        <div class="container">
+
+
+
+
+            <div class="user-settings-wrapper">
+                <ul class="nav">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user" style="font-size: 15px;"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-settings" style="color:black">
+                            <div class="media">
+                                <a class="media-left" href="#">
+                                    <img src="assets/img/64-64.jpg" alt="" class="img-rounded" />
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Jhon Deo Alex </h4>
+                                    <h5>Doctor </h5>
+
+                                </div>
+                            </div>
+                            <hr />
+                            <h5><strong>Personal Bio : </strong></h5>
+                            SPECIALTY:Cardiology<br />
+                            ADDRESS: Canada<br />
+                            TELEPHONE: xx-xxxx-xx
+                            <hr />
+                            <a href="login.html" class="btn btn-danger btn-sm">Logout</a>
+
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+    <!-- LOGO HEADER END-->
+    <div class="navbar navbar-inverse set-radius-zero">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+
+
+                </a>
+
+            </div>
+
+            
+        </div>
+    </div>
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a class="menu-top-active" href="Add.html">Add Patient</a></li>
+                            <li><a href="deletepatient.html">Delete Patient </a></li>
+                            <li><a  href="viewpatients.html">List Patient</a></li>
+                            <li><a href="Addtest.html">Add Test</a></li>
+                             <li><a href="testreport.html">View Test Reports</a></li>
+                          
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container" >
+              <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">Add patient Record </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="panel panel-default">
+                      
+                        <div class="panel-body">
+                       <form action="https://bytemenode.herokuapp.com/patient" method="POST">
+  <div class="form-group">
+    <label for="">Name</label>
+    <input type="text" class="form-control" name="patient_name" placeholder="Enter Name" />
+  </div>
+  <div class="form-group">
+    <label for="">Age</label>
+    <input type="text" class="form-control" name="age" placeholder="Age" />
+  </div>
+                           <label for="">Gender</label>
+                           <div class="radio">
+                               
+                               <label>
+                                   <input type="radio" name="gender" id="optionsRadios1" value="male" checked />
+                                   Male
+                               </label>
+                           </div>
+                           <div class="radio">
+                               <label>
+                                   <input type="radio" name="gender" id="optionsRadios2" value="female" />
+                                  Female
+                               </label>
+                           </div>
+                           <div class="form-group">
+                               <label for="">Contact Number</label>
+                               <input type="text" class="form-control" name="contact_number" placeholder="Enter Contact Number" />
+                           </div>
+                           <div class="form-group">
+                               <label for="exampleInputEmail1">Email Address</label>
+                               <input type="email" class="form-control" name="email" placeholder="Enter Email Address" />
+                           </div>
+                           <div class="form-group">
+                               <label for="">Address</label>
+                               <input type="text" class="form-control" name="address" placeholder="Enter Address" />
+                           </div>
+                           <div class="form-group">
+                               <label>Select Patient Status</label>
+                               <select class="form-control" name="patient_status">
+                                   <option>Normal</option>
+                                   <option>Critical</option>
+                                   <option>Appointment </option>
+                                
+                               </select>
+                           </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+                           <hr />
+                          
+ 
+
+
+
+</form>
+                            </div>
+                            </div>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    &copy; 2016 ByteMe <a href="" target=""></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+</html>

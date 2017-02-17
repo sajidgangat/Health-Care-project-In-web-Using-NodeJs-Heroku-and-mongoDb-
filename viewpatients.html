@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+   
+    <title></title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME ICONS  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+   
+</head>
+<body>
+    <header>
+        <div class="container">
+          
+            
+                    
+                   
+                        <div class="user-settings-wrapper">
+                            <ul class="nav">
+
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                                        <span class="glyphicon glyphicon-user" style="font-size: 15px;"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-settings" style="color:black">
+                                        <div class="media">
+                                            <a class="media-left" href="#">
+                                                <img src="assets/img/64-64.jpg" alt="" class="img-rounded" />
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Jhon Deo Alex </h4>
+                                                <h5>Doctor </h5>
+
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <h5><strong>Personal Bio : </strong></h5>
+                                        SPECIALTY:Cardiology<br />
+                                        ADDRESS: Canada<br />
+                                        TELEPHONE: xx-xxxx-xx
+                                        <hr />
+                                         <a href="login.html" class="btn btn-danger btn-sm">Logout</a>
+
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+              
+          
+    </header>
+    <!-- HEADER END-->
+    <div class="navbar navbar-inverse set-radius-zero">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+
+                
+                </a>
+
+            </div>
+
+            
+        </div>
+    </div>
+    <!-- LOGO HEADER END-->
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                          <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="Add.html">Add Patient</a></li>
+                            <li><a href="deletepatient.html">Delete Patient </a></li>
+                            <li><a class="menu-top-active"  href="viewpatients.html">List Patient</a></li>
+                            <li><a href="Addtest.html">Add Test</a></li>
+                             <li><a href="testreport.html">View Test Reports</a></li>
+                          
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">List Of the Patients</h1>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-md-6">
+                
+                </div>
+                
+            </div>
+                
+                <div class="row">
+                
+                <div class="col-md-11">
+                     <!--    Context Classes  -->
+                    <div class="panel panel-default">
+                       
+                        <div class="panel-heading">
+                            <b>Listing below</b>
+                        </div>
+                        
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                  <table class="table">
+                                    <thead>
+                                       <tr>
+                                            <th>Patient ID</th>
+                                            <th>Name</th>
+                                            <th>Age</th>
+                                           <th>Gender</th>
+                                            <th>Contact Number</th>
+                                            <th>Email</th>
+                                            <th>Address</th>
+                                            <th>Patient Status</th>
+                                        </tr>
+                                    </thead>
+                                   <tbody>
+                                        <tr>
+                                            <td id="list"></td>
+                                            <td id="list1"></td>
+                                            <td id="list2"></td>
+                                           <td id="list3"></td>
+                                           <td id="list4"></td>
+                                           <td id="list5"></td>
+                                            <td id="list6"></td>
+                                             <td id="list7"></td>
+
+                                      </tr>
+                                    
+                                    </tbody>
+                               </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  end  Context Classes  -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    &copy; 2016 ByteMe  : <a href="" target=""></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
